@@ -1,0 +1,44 @@
+/*-------------------------*/
+/*   Custom properties     */
+/*-------------------------*/
+:root{
+  /*  colors */
+    /* primary colors */
+    --clr-peach: 11 73 66;
+    --clr-black: 270 3 11;
+    --clr-white: 0 0 100;
+    /* secondary colors */
+    --clr-light-reach: 11 100 80;
+    --clr-dark-grey: 264 5 20;
+    --clr-ligt-grey: 210 17 95;
+
+
+     /*  typography  --heading  */
+     --sz-h1: 3rem;
+     --sz-h2: 2.5rem;
+     --sz-h3: 1.25rem;
+
+      /*  typography  --body  */
+      --sz-p: 1rem;
+
+
+    /*  font-family */
+    --font-family: "Jost", sans-serif;
+}
+
+/*-------------------------*/
+/*        Reset            */
+/*-------------------------*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    color: var(--clr-dark-grey);
+}
