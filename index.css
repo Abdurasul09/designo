@@ -10,7 +10,7 @@
     /* secondary colors */
     --clr-light-reach: 11 100 80;
     --clr-dark-grey: 264 5 20;
-    --clr-ligt-grey: 210 17 95;
+    --clr-light-grey: 210 17 95;
 
 
      /*  typography  --heading  */
@@ -19,11 +19,11 @@
      --sz-h3: 1.25rem;
 
       /*  typography  --body  */
-      --sz-p: 1rem;
+      --sz-p-m: 1rem;
 
 
     /*  font-family */
-    --font-family: "Jost", sans-serif;
+    --font-jost: "Jost", sans-serif;
 }
 
 /*-------------------------*/
@@ -38,7 +38,142 @@
 }
 
 body{
-    font-family: var(--font-inter);
+    font-family: var(--font-jost);
     font-size: 1rem;
-    color: var(--clr-dark-grey);
+    color: hsl(var(--clr-black));
 }
+
+/*  make images to use esier  */
+
+image,
+picture{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  make form to use esier  */
+
+input,
+button,
+textarea,
+option,
+select{
+    font: inherit;
+}
+
+/* remove animation for people who ve turned them off  */
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*-------------------------*/
+/*  Utility classes        */
+/*-------------------------*/
+
+/*  general  */
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+ .container{
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 2em;
+ }
+
+ 
+
+ /*  Colors  */
+
+ .cr-peach{
+    color: hsl(var(--clr-peach));
+ }
+ .cr-black{
+    color: hsl(var(--clr-black));
+ }
+ .cr-white{
+    color: hsl(var(--clr-white));
+ }
+ .cr-reach{
+    color: hsl(var(--clr-light-reach));
+ }
+ .cr-dark{
+    color: hsl(var(--clr-dark-grey));
+ }
+ .cr-grey{
+    color: hsl(var(--clr-light-grey));
+ }
+
+ /*  Typography */
+
+ .fs-h1{
+   font-size: var(--sz-h1);
+ }
+ .fs-h2{
+    font-size: var(--sz-h2);
+  }
+  .fs-h3{
+    font-size: var(--sz-h3);
+  }
+
+
+  .fs-p-m{
+    font-size: var(--sz-p-m);
+  }
+
+  .bold{
+    font-weight: bold;
+ }
+
+ .line-height48{
+    line-height: 3rem;
+ }
+
+ .line-height26{
+    line-height: 1.5rem;
+ }
+
+ .letter-spacing5{
+    letter-spacing: 5px;
+ }
+ .letter-spacing2{
+    letter-spacing: 2px;
+ }
+
+
+/*-------------------------*/
+/*  Components             */
+/*-------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 5px;
+}
+
+ nav{
+    padding: 96px 0;
+    justify-content: space-between;
+ }
+
+ .card p{
+    margin-right: 30px;
+ }
+
+ .card h1{
+    margin-left: 15px;
+ }
