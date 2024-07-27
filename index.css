@@ -143,10 +143,10 @@ select{
  }
 
  .letter-spacing5{
-    letter-spacing: 5px;
+    letter-spacing: 1px;
  }
  .letter-spacing2{
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
  }
 
 
@@ -177,3 +177,63 @@ h6{
  .card h1{
     margin-left: 15px;
  }
+
+ /*  HOME SECTION  */
+ body{
+   background-color: hsl(var(--clr-white));
+ }
+
+
+ #home{
+   position: relative;
+ }
+
+ .container{
+   left: 165px;
+   top: 155px;
+ }
+
+ .home-content{
+   position: absolute;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 2rem;
+   left: 260px;
+ 
+ }
+
+
+
+ .home-content >*{
+   width: 50%;
+ }
+
+ .home-content >*:first-child *{
+   margin-bottom: 35px;
+
+ }
+
+ button{
+   width: 30%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+ }
+
+
+ .home-bg{
+   position: absolute;
+   top: 140;
+   left: 165;
+   width: 1190px;
+   height: 621px;
+   background-color: hsl(var(--clr-peach));
+   z-index: -1;
+   border-radius: 20px;
+
+ }
+
+ .home-bg > img{
+   margin-left: 46%;
+ }
+
