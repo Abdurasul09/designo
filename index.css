@@ -188,7 +188,7 @@ h6{
    position: relative;
  }
 
- .container{
+ .home-block{
    left: 165px;
    top: 155px;
  }
@@ -233,7 +233,11 @@ h6{
 
  }
 
- .home-bg > img{
-   margin-left: 46%;
- }
+ 
 
+
+ /*  Desing Section  */
+
+ .des-content{
+   display: flex;
+ }
