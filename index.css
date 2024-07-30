@@ -44,9 +44,9 @@ body {
 /*  make images to use esier  */
 
 image,
-picture {
-  width: 100%;
-  object-fit: cover;
+picture{
+    width: 100%;
+    object-fit: cover;
 }
 
 /*  make form to use esier  */
@@ -159,10 +159,10 @@ h6 {
   line-height: 5px;
 }
 
-nav {
-  padding: 96px 0;
-  justify-content: space-between;
-}
+ nav{
+    padding: 96px 0;
+    justify-content: space-between;
+ }
 
 .card p {
   margin-right: 30px;
@@ -172,33 +172,66 @@ nav {
   margin-left: 15px;
 }
 
-/*  HOME SECTION  */
+ /*  HOME SECTION  */
+ body{
+   background-color: hsl(var(--clr-white));
+ }
 
-#home {
 
-}
+ #home{
+   position: relative;
+ }
 
-.home-content {
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 2rem;
-  background-color: hsl(var(--clr-peach));
-  
-}
+ .home-block{
+   left: 165px;
+   top: 155px;
+ }
 
-.home-content > * {
-  width: 50%;
-}
+ .home-content{
+   position: absolute;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 2rem;
+   left: 260px;
+ 
+ }
 
-button {
-  width: 30%;
+
+
+ .home-content >*{
+   width: 50%;
+ }
+
+ .home-content >*:first-child *{
+   margin-bottom: 35px;
+
+ }
+
+ button{
+   width: 30%;
   padding: 15px;
   border-radius: 8px;
   border: none;
-}
+ }
 
-/*  Desing Section  */
 
-.des-content {
-  display: flex;
-}
+ .home-bg{
+   position: absolute;
+   top: 140;
+   left: 165;
+   width: 1190px;
+   height: 621px;
+   background-color: hsl(var(--clr-peach));
+   z-index: -1;
+   border-radius: 20px;
+
+ }
+
+ 
+
+
+ /*  Desing Section  */
+
+ .des-content{
+   display: flex;
+ }
