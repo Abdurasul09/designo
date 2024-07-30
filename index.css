@@ -1,29 +1,27 @@
 /*-------------------------*/
 /*   Custom properties     */
 /*-------------------------*/
-:root{
+:root {
   /*  colors */
-    /* primary colors */
-    --clr-peach: 11 73 66;
-    --clr-black: 270 3 11;
-    --clr-white: 0 0 100;
-    /* secondary colors */
-    --clr-light-reach: 11 100 80;
-    --clr-dark-grey: 264 5 20;
-    --clr-light-grey: 210 17 95;
+  /* primary colors */
+  --clr-peach: 11 73 66;
+  --clr-black: 270 3 11;
+  --clr-white: 0 0 100;
+  /* secondary colors */
+  --clr-light-reach: 11 100 80;
+  --clr-dark-grey: 264 5 20;
+  --clr-light-grey: 210 17 95;
 
+  /*  typography  --heading  */
+  --sz-h1: 3rem;
+  --sz-h2: 2.5rem;
+  --sz-h3: 1.25rem;
 
-     /*  typography  --heading  */
-     --sz-h1: 3rem;
-     --sz-h2: 2.5rem;
-     --sz-h3: 1.25rem;
+  /*  typography  --body  */
+  --sz-p-m: 1rem;
 
-      /*  typography  --body  */
-      --sz-p-m: 1rem;
-
-
-    /*  font-family */
-    --font-jost: "Jost", sans-serif;
+  /*  font-family */
+  --font-jost: "Jost", sans-serif;
 }
 
 /*-------------------------*/
@@ -32,23 +30,24 @@
 
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
+*::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    font-family: var(--font-jost);
-    font-size: 1rem;
-    color: hsl(var(--clr-black));
+body {
+  font-family: var(--font-jost);
+  font-size: 1rem;
+  color: hsl(var(--clr-black));
 }
 
 /*  make images to use esier  */
 
 image,
-picture{
-    width: 100%;
-    object-fit: cover;
+picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*  make form to use esier  */
@@ -57,20 +56,20 @@ input,
 button,
 textarea,
 option,
-select{
-    font: inherit;
+select {
+  font: inherit;
 }
 
 /* remove animation for people who ve turned them off  */
-@media (prefers-reduced-motion: reduce){
-    *,
-    *::before,
-    *::after{
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /*-------------------------*/
@@ -79,76 +78,72 @@ select{
 
 /*  general  */
 
-.flex{
-    display: flex;
-    align-items: center;
+.flex {
+  display: flex;
+  align-items: center;
 }
 
- .container{
-    max-width: 80rem;
-    margin-inline: auto;
-    padding-inline: 2em;
- }
+.container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 2em;
+}
 
- 
+/*  Colors  */
 
- /*  Colors  */
+.cr-peach {
+  color: hsl(var(--clr-peach));
+}
+.cr-black {
+  color: hsl(var(--clr-black));
+}
+.cr-white {
+  color: hsl(var(--clr-white));
+}
+.cr-reach {
+  color: hsl(var(--clr-light-reach));
+}
+.cr-dark {
+  color: hsl(var(--clr-dark-grey));
+}
+.cr-grey {
+  color: hsl(var(--clr-light-grey));
+}
 
- .cr-peach{
-    color: hsl(var(--clr-peach));
- }
- .cr-black{
-    color: hsl(var(--clr-black));
- }
- .cr-white{
-    color: hsl(var(--clr-white));
- }
- .cr-reach{
-    color: hsl(var(--clr-light-reach));
- }
- .cr-dark{
-    color: hsl(var(--clr-dark-grey));
- }
- .cr-grey{
-    color: hsl(var(--clr-light-grey));
- }
+/*  Typography */
 
- /*  Typography */
+.fs-h1 {
+  font-size: var(--sz-h1);
+}
+.fs-h2 {
+  font-size: var(--sz-h2);
+}
+.fs-h3 {
+  font-size: var(--sz-h3);
+}
 
- .fs-h1{
-   font-size: var(--sz-h1);
- }
- .fs-h2{
-    font-size: var(--sz-h2);
-  }
-  .fs-h3{
-    font-size: var(--sz-h3);
-  }
+.fs-p-m {
+  font-size: var(--sz-p-m);
+}
 
+.bold {
+  font-weight: bold;
+}
 
-  .fs-p-m{
-    font-size: var(--sz-p-m);
-  }
+.line-height48 {
+  line-height: 3rem;
+}
 
-  .bold{
-    font-weight: bold;
- }
+.line-height26 {
+  line-height: 1.5rem;
+}
 
- .line-height48{
-    line-height: 3rem;
- }
-
- .line-height26{
-    line-height: 1.5rem;
- }
-
- .letter-spacing5{
-    letter-spacing: 1px;
- }
- .letter-spacing2{
-    letter-spacing: 1.5px;
- }
-
+.letter-spacing5 {
+  letter-spacing: 1px;
+}
+.letter-spacing2 {
+  letter-spacing: 1.5px;
+}
 
 /*-------------------------*/
 /*  Components             */
@@ -159,85 +154,87 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    font-weight: bold;
-    letter-spacing: 5px;
-    line-height: 5px;
+h6 {
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 5px;
 }
 
- nav{
-    padding: 96px 0;
-    justify-content: space-between;
- }
+/* Header Section */
 
- .card p{
-    margin-right: 30px;
- }
+nav {
+  padding: 96px 0;
+  justify-content: space-between;
+}
 
- .card h1{
-    margin-left: 15px;
- }
+.card p {
+  margin-right: 30px;
+}
 
- /*  HOME SECTION  */
- body{
-   background-color: hsl(var(--clr-white));
- }
+.card h1 {
+  margin-left: 15px;
+}
 
+/* First bouth section */
 
- #home{
+.first-bouth-section{
    position: relative;
- }
+}
 
- .home-block{
-   left: 165px;
-   top: 155px;
- }
-
- .home-content{
+.img-bg{
    position: absolute;
-   justify-content: space-between;
-   align-items: center;
-   column-gap: 2rem;
-   left: 260px;
- 
- }
+   left: 0;
+   top: 60%;
+   z-index: -1;
+}
 
+/*  HOME SECTION  */
 
+#home {
+  position: relative;
+  margin-bottom: 160px;
+}
 
- .home-content >*{
-   width: 50%;
- }
+.home-content {
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
 
- .home-content >*:first-child *{
-   margin-bottom: 35px;
+  background-color: hsl(var(--clr-peach));
+  border-radius: 15px;
+}
 
- }
+.home-content > *:first-child {
+  width: 60%;
+  padding-left: 90px;
+}
 
- button{
-   width: 30%;
+.home-content > *:first-child p {
+  margin: 46px 0;
+}
+
+.home-phone{
+   margin-bottom: -6px;
+   z-index: 100;
+}
+
+.home-content > *:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.home-btn {
+  width: 30%;
   padding: 15px;
   border-radius: 8px;
   border: none;
- }
+}
 
-
- .home-bg{
-   position: absolute;
-   top: 140;
-   left: 165;
-   width: 1190px;
-   height: 621px;
-   background-color: hsl(var(--clr-peach));
-   z-index: -1;
-   border-radius: 20px;
-
- }
-
- 
-
-
- /*  Desing Section  */
-
- .des-content{
-   display: flex;
- }
+.oval-circle {
+  position: absolute;
+  top: 0;
+  right: 129px;
+  z-index: 1;
+}
