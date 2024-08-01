@@ -238,3 +238,58 @@ nav {
   right: 129px;
   z-index: 1;
 }
+
+/*  Designs Section  */
+#design{
+   position: relative;
+}
+.des-content{
+   
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+}
+
+.des-card{
+ text-align: center;
+ color: hsl(var(--clr-white));
+ 
+}
+
+.web-des{
+ background-image: url(./images/Bitmap\ 1.svg);
+ width: 541px;
+ height: 640px;
+ top: 955px;
+ left: 164px;
+ padding-top: 265px;
+
+}
+
+
+.abb-des{
+ background-image: url(./images/Bitmap2.svg);
+  width: 541px;
+ height: 308px;
+ top: 955px;
+ left: 735px;
+ padding-top: 120px;
+}
+
+.grap-des{
+   background-image: url(./images/Bitmap\ 3.svg);
+   width: 541px;
+   height: 308px;
+   top: 1287px;
+   left: 735px;
+   margin-top: 23px;
+   padding-top: 130px;
+}
+
+p{
+   margin-top: 35px;
+}
+
+.margin-left10{
+   margin-left: 10px;
+}
