@@ -22,6 +22,8 @@
 
   /*  font-family */
   --font-jost: "Jost", sans-serif;
+
+  --general-space-bottom: 160px;
 }
 
 /*-------------------------*/
@@ -58,6 +60,10 @@ textarea,
 option,
 select {
   font: inherit;
+}
+
+ul,li{
+  list-style: none;
 }
 
 /* remove animation for people who ve turned them off  */
@@ -167,24 +173,24 @@ nav {
   justify-content: space-between;
 }
 
-.card p {
-  margin-right: 30px;
+.nav-links{
+  column-gap: 44px;
 }
 
-.card h1 {
+.logo-block h1 {
   margin-left: 15px;
 }
 
 /* First bouth section */
 
-.first-bouth-section {
+#first-bouth-section {
   position: relative;
 }
 
 .img-bg {
   position: absolute;
-  left: 0;
-  top: 60%;
+  left: -7%;
+  top: 30%;
   z-index: -1;
 }
 
@@ -192,11 +198,11 @@ nav {
 
 #home {
   margin-bottom: var(--general-space-bottom);
-  position: relative;
-  margin-bottom: 160px;
+
 }
 
 .home-content {
+  position: relative;
   justify-content: space-between;
   align-items: center;
   column-gap: 2rem;
@@ -236,6 +242,132 @@ nav {
 .oval-circle {
   position: absolute;
   top: 0;
-  right: 129px;
+  right: 0;
   z-index: 1;
+}
+
+/*  DESIGN SECTION  */
+
+#designs {
+  margin-bottom: var(--general-space-bottom);
+}
+
+.design-content--card {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 999;
+}
+
+.design-content--card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(var(--clr-black) / 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.design-content--card:hover::after {
+  background: hsl(var(--clr-light-reach) / 0.6);
+}
+
+.design-content--card h1,
+p {
+  color: hsl(var(--clr-white));
+  z-index: 100;
+}
+
+.design-content--card h1 {
+  font-size: var(--sz-h2);
+  font-weight: 500;
+}
+
+.design-content--card p {
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.web-design-card {
+  background-image: url(./images/web.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-area: webCard;
+}
+
+.app-design-card {
+  height: 300px;
+  background-image: url(./images/app.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-area: appCard;
+}
+.graphic-design-card {
+  height: 300px;
+  background-image: url(./images/graphic.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-area: graphicCard;
+}
+
+.designs-content {
+  display: grid;
+  grid-template-columns: repeat(4, calc(80 / 4));
+  grid-template-rows: auto;
+  gap: 3rem;
+  grid-template-areas:
+    "webCard webCard appCard appCard"
+    "webCard webCard graphicCard graphicCard";
+}
+
+/*  SERVICES SECTION  */
+
+.service-content {
+  position: relative;
+  column-gap: 4rem;
+  margin-bottom: var(--general-space-bottom);
+}
+
+.oval-service {
+  position: absolute;
+  z-index: -1;
+  padding-left: 80px;
+}
+
+.service-card-img {
+  margin-bottom: 80px;
+  padding-left: 80px;
+}
+
+.service-content h3 {
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.service-content p {
+  font-weight: 400;
+}
+
+.service-card > * {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
