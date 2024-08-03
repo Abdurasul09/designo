@@ -345,6 +345,11 @@ p {
   padding-left: 80px;
 }
 
+.service-card-img {
+  margin-bottom: 80px;
+  padding-left: 80px;
+}
+
 .service-content h3 {
   line-height: 20px;
   font-weight: 500;
@@ -352,8 +357,6 @@ p {
 
 .service-content p {
   font-weight: 400;
-  width: 350px;
-  height: 104px;
 }
 
 .service-card > * {
@@ -365,8 +368,5 @@ p {
   text-align: center;
 }
 
-.service-card-img {
-  margin-bottom: 80px;
-  padding-left: 80px;
-}
+
 
