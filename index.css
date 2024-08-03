@@ -22,9 +22,6 @@
 
   /*  font-family */
   --font-jost: "Jost", sans-serif;
-
-  /*  Space between section  */
-  --general-space-bottom: 160px;
 }
 
 /*-------------------------*/
@@ -194,8 +191,9 @@ nav {
 /*  HOME SECTION  */
 
 #home {
-  position: relative;
   margin-bottom: var(--general-space-bottom);
+  position: relative;
+  margin-bottom: 160px;
 }
 
 .home-content {
@@ -240,93 +238,4 @@ nav {
   top: 0;
   right: 129px;
   z-index: 1;
-}
-
-/*  DESIGN SECTION  */
-
-#designs {
-  margin-bottom: var(--general-space-bottom);
-}
-
-.design-content--card {
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  position: relative;
-  z-index: 999;
-}
-
-.design-content--card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: hsl(var(--clr-black)/ .5);
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  z-index: 1;
-}
-
-.design-content--card:hover::after {
-  background: hsl(var(--clr-light-reach) / .6);
-}
-
-.design-content--card h1,
-p {
-  color: hsl(var(--clr-white));
-  z-index: 100;
-}
-
-.design-content--card h1 {
-  font-size: var(--sz-h2);
-  font-weight: 500;
-}
-
-.design-content--card p {
-  font-weight: 300;
-  letter-spacing: 5px;
-}
-
-.web-design-card {
-    background-image: url(./images/Bitmap\ 1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-  grid-area: webCard;
-}
-
-.app-design-card {
-  height: 300px;
-  background-image: url(./images/Bitmap2.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  grid-area: appCard;
-}
-.graphic-design-card {
-  height: 300px;
-  background-image: url(./images/Bitmap\ 3.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  grid-area: graphicCard;
-}
-
-.designs-content {
-  display: grid;
-  grid-template-columns: repeat(4, calc(80 / 4));
-  grid-template-rows: auto;
-  gap: 3rem;
-  grid-template-areas:
-    "webCard webCard appCard appCard"
-    "webCard webCard graphicCard graphicCard";
 }
