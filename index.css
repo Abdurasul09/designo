@@ -266,7 +266,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: hsl(var(--clr-black)/ .5);
+  background: hsl(var(--clr-black) / 0.5);
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -274,7 +274,7 @@ nav {
 }
 
 .design-content--card:hover::after {
-  background: hsl(var(--clr-light-reach) / .6);
+  background: hsl(var(--clr-light-reach) / 0.6);
 }
 
 .design-content--card h1,
@@ -294,10 +294,10 @@ p {
 }
 
 .web-design-card {
-    background-image: url(./images/Bitmap\ 1.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(./images/Bitmap\ 1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   grid-area: webCard;
 }
@@ -330,3 +330,43 @@ p {
     "webCard webCard appCard appCard"
     "webCard webCard graphicCard graphicCard";
 }
+
+/*  SERVICES SECTION  */
+
+.service-content {
+  position: relative;
+  column-gap: 4rem;
+  left: 20px;
+}
+
+.oval-service {
+  position: absolute;
+  z-index: -1;
+  padding-left: 80px;
+}
+
+.service-content h3 {
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.service-content p {
+  font-weight: 400;
+  width: 350px;
+  height: 104px;
+}
+
+.service-card > * {
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-card-img {
+  margin-bottom: 80px;
+  padding-left: 80px;
+}
+
