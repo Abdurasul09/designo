@@ -373,15 +373,12 @@ p {
 }
 
 /*   ABOUT YOUR PROJECT   */
-#your-project {
-  margin-bottom: var(--general-space-bottom);
-}
 
 .content-project {
   position: relative;
   justify-content: space-between;
   gap: 2rem;
-  width: 1200px;
+  width: 1180px;
   height: 292px;
 
   background-color: hsl(var(--clr-peach));
@@ -404,6 +401,7 @@ p {
   margin-right: 130px;
   border-radius: 8px;
   border: none;
+  background-color: hsl(var(--clr-white));
 }
 
 .content-project h2 {
@@ -418,6 +416,7 @@ p {
 }
 
 /* First bouth section */
+
 #second-bouth-section {
   position: relative;
 }
@@ -432,6 +431,72 @@ p {
 .oval-project {
   position: absolute;
   left: 30%;
- top:200px;
+  top: 200px;
   z-index: 1;
+}
+
+.project-bg {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 50%;
+  margin-left: 330px;
+}
+
+/*  FOOTER   */
+
+#footer {
+  margin-bottom: var(--general-space-bottom);
+}
+
+.footer-content {
+  position: relative;
+  margin-top: -30px;
+}
+
+.footer-blocks > * {
+  letter-spacing: normal;
+  width: 68%;
+}
+
+.nav-footer {
+  column-gap: 44px;
+  margin-right: 10px;
+}
+
+.footer-hr {
+  margin-bottom: 40px;
+  margin-top: -50px;
+  opacity: 10%;
+}
+
+.footer-blocks p {
+  padding-right: 200px;
+  opacity: 50%;
+}
+
+.footer-span {
+  font-weight: 400;
+}
+
+.footer-img {
+  margin-left: 45%;
+  margin-top: 10%;
+}
+
+.footer-img > * {
+  padding-left: 20px;
+}
+
+footer {
+  position: relative;
+  background-color: hsl(var(--clr-black));
+  width: 1350px;
+  height: 400px;
+  margin-bottom: 500%;
+  z-index: -1;
+}
+/* Third bouth section */
+
+#third-bouth-section {
+  position: absolute;
 }
