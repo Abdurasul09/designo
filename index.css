@@ -168,14 +168,27 @@ h6 {
 }
 
 /* Header Section */
+#primary-nav {
+  margin: 65px 0;
+}
 
 nav {
-  padding: 96px 0;
   justify-content: space-between;
 }
 
 .nav-links {
   column-gap: 44px;
+}
+
+.hdr-link{
+  text-decoration: none;
+  color: hsl(var(--clr-black));
+  padding-bottom: .2px;
+}
+
+.hdr-link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid hsl(var(--clr-dark-grey));
 }
 
 .logo-block h1 {
@@ -423,8 +436,8 @@ p {
 
 .img-bg-2 {
   position: absolute;
-  top: 310%;
-  left: 30%;
+  top: 100px;
+  right: -85px;
   z-index: -1;
 }
 
@@ -445,17 +458,14 @@ p {
 /*  FOOTER   */
 
 #footer {
-  margin-bottom: var(--general-space-bottom);
+  background-color: hsl(var(--clr-black));
+  margin-top: -70px;
 }
 
 .footer-content {
-  position: relative;
-  margin-top: -30px;
-}
-
-.footer-blocks > * {
-  letter-spacing: normal;
-  width: 68%;
+  display: flex;
+  flex-direction: column;
+  padding: 140px 0 70px 0;
 }
 
 .nav-footer {
@@ -464,39 +474,45 @@ p {
 }
 
 .footer-hr {
-  margin-bottom: 40px;
-  margin-top: -50px;
   opacity: 10%;
+  margin: 40px 0;
 }
 
-.footer-blocks p {
-  padding-right: 200px;
+.footer-blocks {
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 4rem;
+}
+
+.footer-blocks > * {
+  width: calc(100% / 3);
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-block span {
   opacity: 50%;
 }
 
-.footer-span {
-  font-weight: 400;
-}
-
-.footer-img {
-  margin-left: 45%;
-  margin-top: 10%;
+.footer-blocks > *:last-child {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-img > * {
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-footer {
-  position: relative;
-  background-color: hsl(var(--clr-black));
-  width: 1350px;
-  height: 400px;
-  margin-bottom: 500%;
-  z-index: -1;
+.ftr-link{
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+  padding-bottom: .2px;
 }
-/* Third bouth section */
 
-#third-bouth-section {
-  position: absolute;
+.ftr-link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid hsl(var(--clr-white));
 }
