@@ -168,14 +168,27 @@ h6 {
 }
 
 /* Header Section */
+#primary-nav {
+  margin: 65px 0;
+}
 
 nav {
-  padding: 96px 0;
   justify-content: space-between;
 }
 
 .nav-links {
   column-gap: 44px;
+}
+
+.hdr-link{
+  text-decoration: none;
+  color: hsl(var(--clr-black));
+  padding-bottom: .2px;
+}
+
+.hdr-link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid hsl(var(--clr-dark-grey));
 }
 
 .logo-block h1 {
@@ -375,17 +388,14 @@ p {
 /*   ABOUT YOUR PROJECT   */
 #your-project {
   margin-bottom: var(--general-space-bottom);
-  background-color: hsl(var(--clr-peach));
-  background-image: url("./images/your-project-behind-sircles.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
-.your-project-content {
+.content-project {
   position: relative;
   justify-content: space-between;
+  gap: 2rem;
+  width: 1200px;
+  height: 292px;
 
   border-radius: 15px;
   padding: 78px;
@@ -401,6 +411,7 @@ p {
   height: 56px;
   border-radius: 8px;
   border: none;
+  background-color: hsl(var(--clr-white));
 }
 
 .your-project-content h2 {
@@ -414,7 +425,7 @@ p {
   font-weight: 400;
 }
 
-/* Second bouth section */
+/* First bouth section */
 #second-bouth-section {
   position: relative;
 }
@@ -426,3 +437,78 @@ p {
   z-index: -1;
 }
 
+.oval-project {
+  position: absolute;
+  left: 30%;
+ top:200px;
+  z-index: 1;
+}
+
+.project-bg {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 50%;
+  margin-left: 330px;
+}
+
+/*  FOOTER   */
+
+#footer {
+  background-color: hsl(var(--clr-black));
+  margin-top: -70px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 0 70px 0;
+}
+
+.nav-footer {
+  column-gap: 44px;
+  margin-right: 10px;
+}
+
+.footer-hr {
+  opacity: 10%;
+  margin: 40px 0;
+}
+
+.footer-blocks {
+  justify-content: space-between;
+  align-items: flex-end;
+  column-gap: 4rem;
+}
+
+.footer-blocks > * {
+  width: calc(100% / 3);
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-block span {
+  opacity: 50%;
+}
+
+.footer-blocks > *:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-img > * {
+  margin-left: 20px;
+}
+
+.ftr-link{
+  text-decoration: none;
+  color: hsl(var(--clr-white));
+  padding-bottom: .2px;
+}
+
+.ftr-link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid hsl(var(--clr-white));
+}
