@@ -180,10 +180,10 @@ nav {
   column-gap: 44px;
 }
 
-.hdr-link{
+.hdr-link {
   text-decoration: none;
   color: hsl(var(--clr-black));
-  padding-bottom: .2px;
+  padding-bottom: 0.2px;
 }
 
 .hdr-link:hover {
@@ -388,17 +388,28 @@ p {
 /*   ABOUT YOUR PROJECT   */
 #your-project {
   margin-bottom: var(--general-space-bottom);
+  background-color: hsl(var(--clr-peach));
+  background-image: url("./images/your-project-behind-sircles.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 71px;
 }
 
-.content-project {
-  position: relative;
+.your-project-content {
   justify-content: space-between;
-  gap: 2rem;
-  width: 1200px;
-  height: 292px;
+}
 
-  border-radius: 15px;
-  padding: 78px;
+.your-project-content h2 {
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: normal;
+  margin-bottom: 35px;
+}
+
+.your-project-content p {
+  font-weight: 400;
 }
 
 .info-project {
@@ -414,17 +425,6 @@ p {
   background-color: hsl(var(--clr-white));
 }
 
-.your-project-content h2 {
-  font-weight: 500;
-  line-height: 40px;
-  letter-spacing: normal;
-  margin-bottom: 35px;
-}
-
-.your-project-content p {
-  font-weight: 400;
-}
-
 /* First bouth section */
 #second-bouth-section {
   position: relative;
@@ -435,20 +435,6 @@ p {
   top: 100px;
   right: -85px;
   z-index: -1;
-}
-
-.oval-project {
-  position: absolute;
-  left: 30%;
- top:200px;
-  z-index: 1;
-}
-
-.project-bg {
-  position: absolute;
-  z-index: 1;
-  margin-bottom: 50%;
-  margin-left: 330px;
 }
 
 /*  FOOTER   */
@@ -502,10 +488,10 @@ p {
   margin-left: 20px;
 }
 
-.ftr-link{
+.ftr-link {
   text-decoration: none;
   color: hsl(var(--clr-white));
-  padding-bottom: .2px;
+  padding-bottom: 0.2px;
 }
 
 .ftr-link:hover {
