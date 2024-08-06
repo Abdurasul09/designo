@@ -375,25 +375,23 @@ p {
 /*   ABOUT YOUR PROJECT   */
 #your-project {
   margin-bottom: var(--general-space-bottom);
-}
-
-.content-project {
-  position: relative;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 1200px;
-  height: 292px;
-
   background-color: hsl(var(--clr-peach));
+  background-image: url("./images/your-project-behind-sircles.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 15px;
 }
 
-.block-project > * {
-  width: 68%;
-  padding-left: 90px;
+.your-project-content {
+  position: relative;
+  justify-content: space-between;
+
+  border-radius: 15px;
+  padding: 78px;
 }
 
-.block-project > *:first-child {
+.info-project {
   width: 50%;
 }
 
@@ -401,37 +399,30 @@ p {
   font-weight: 500;
   width: 152px;
   height: 56px;
-  margin-right: 130px;
   border-radius: 8px;
   border: none;
 }
 
-.content-project h2 {
+.your-project-content h2 {
   font-weight: 500;
   line-height: 40px;
   letter-spacing: normal;
   margin-bottom: 35px;
 }
 
-.content-project p {
+.your-project-content p {
   font-weight: 400;
 }
 
-/* First bouth section */
+/* Second bouth section */
 #second-bouth-section {
   position: relative;
 }
 
 .img-bg-2 {
   position: absolute;
-  top: 310%;
-  left: 30%;
+  top: 100px;
+  right: -85px;
   z-index: -1;
 }
 
-.oval-project {
-  position: absolute;
-  left: 30%;
- top:200px;
-  z-index: 1;
-}
