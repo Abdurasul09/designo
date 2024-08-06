@@ -387,7 +387,6 @@ p {
 
 /*   ABOUT YOUR PROJECT   */
 #your-project {
-  margin-bottom: var(--general-space-bottom);
   background-color: hsl(var(--clr-peach));
   background-image: url("./images/your-project-behind-sircles.svg");
   background-position: center;
