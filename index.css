@@ -252,6 +252,11 @@ nav {
   border: none;
 }
 
+.home-btn:hover{
+  background: hsl(var(--clr-light-reach));
+  cursor: pointer;
+}
+
 .oval-circle {
   position: absolute;
   top: 0;
@@ -387,7 +392,6 @@ p {
 
 /*   ABOUT YOUR PROJECT   */
 #your-project {
-
   background-color: hsl(var(--clr-peach));
   background-image: url("./images/your-project-behind-sircles.svg");
   background-position: center;
@@ -414,6 +418,11 @@ p {
   height: 56px;
   border-radius: 8px;
   border: none;
+}
+
+.project-btn:hover{
+  background: hsl(var(--clr-light-reach));
+  cursor: pointer;
 }
 
 .your-project-content h2 {
